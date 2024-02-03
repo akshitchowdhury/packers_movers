@@ -50,3 +50,32 @@ img{
   width: 800px;
 
 }
+
+
+.navbar{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #333;
+padding: 10px;
+color: #fff;
+height: 15vh;
+}
+
+
+/* .main{
+
+
+} */
+
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links h3 {
+  margin: 30px;
+  cursor: pointer;
+  color: goldenrod;
+}
