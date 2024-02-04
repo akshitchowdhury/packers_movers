@@ -8,8 +8,8 @@ const About = () => {
     <div className='about'>
 
     <div className='background'>
-    
-    <h3><Link to="/" className="navbar-link">Home</Link>- About Us</h3>
+    <h1>About Us</h1>
+    <h3 className='Linker'><Link to="/" className="navbar-link">Home</Link>- About Us</h3>
 
     </div>
 
