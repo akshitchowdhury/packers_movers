@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'; // Add styles as needed
+import Footer from '../Footer/Footer';
 
 const Navbar = () => {
   return (
@@ -17,6 +18,7 @@ const Navbar = () => {
           <Link to="/services" className="navbar-link">Services</Link>
           <Link to="/contact" className="navbar-link">Contact Us</Link>
         </div>
+        <Footer/>
       </div>
     </nav>
   );

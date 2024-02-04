@@ -1,8 +1,15 @@
 // Home.js
-import React from 'react';
-import './Home.css'
+import React, { useEffect } from 'react';
+import './Home.css';
 
 const Home = () => {
+  useEffect(() => {
+    const homeContainer = document.querySelector('.home-container');
+    if (homeContainer) {
+      homeContainer.classList.add('fade-in');
+    }
+  }, []);
+
   return (
     <div className="home-container">
       <h1>Welcome to Our Website</h1>

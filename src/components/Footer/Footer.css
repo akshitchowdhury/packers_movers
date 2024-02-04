@@ -1,16 +1,15 @@
 /* Footer.css */
 
 .footer {
-
-    background-image: url('../assets/footer.jpg');
-    background-size: cover;
+  background-image: url('../assets/footer.jpg');
+  background-size: cover;
   background-position: center;
-  
   text-align: center;
   padding: 0;
   position: fixed;
   margin: 0;
   bottom: 0;
+  left: 0; /* Ensure the footer starts from the left edge of the screen */
+  right: 0; /* Ensure the footer ends at the right edge of the screen */
   width: 100%;
-  }
-  
+}

@@ -16,3 +16,14 @@
 .home-container p {
   font-size: 1.2rem;
 }
+
+.home-container {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.home-container.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
