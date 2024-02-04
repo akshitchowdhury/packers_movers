@@ -8,15 +8,13 @@
   text-align: center;
 }
 
-.home-container h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
+.home-container img {
+right: 0;
+left: 0;
+width: 100%;
 
-.home-container p {
-  font-size: 1.2rem;
-}
 
+}
 .home-container {
   opacity: 0;
   transform: translateX(-20px);
