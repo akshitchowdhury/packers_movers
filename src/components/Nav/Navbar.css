@@ -1,0 +1,36 @@
+/* Navbar.css */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-link {
+  color: #3498db; /* Default color */
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar-link:hover {
+  color: goldenrod; /* Color on hover */
+}
+
+/* Add media queries for responsiveness if needed */

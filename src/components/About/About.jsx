@@ -9,11 +9,7 @@ const About = () => {
     
     <h3>Home- About Us</h3>
 
-
     </div>
-
-
-
 
     </div>
     </>
