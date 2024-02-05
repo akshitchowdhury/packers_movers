@@ -4,10 +4,13 @@ import bike from '../../assets/services/bike_transport.webp';
 import car from '../../assets/services/car_transport.jpg';
 import comm from '../../assets/services/comercial_shift.jpg';
 import house from '../../assets/services/house_shift.jpg';
-import intercity from '../../assets/services/intercity_shift.jpg';
+import intercity from '../../assets/services/intercity.jpg';
 import international from '../../assets/services/international_shift.webp';
 import local from '../../assets/services/local_shifting.webp';
-import luggage from '../../assets/services/luggage_shift.jpg';
+import luggage from '../../assets/services/luggage.jpg';
+import office from '../../assets/services/office_shift.jpg';
+import truck from '../../assets/services/truck_rent.webp';
+import warehouse from '../../assets/services/warehousing_storage.webp';
 
 const card_data = [
   { image: pet, text: 'Description for pet' },
@@ -19,6 +22,9 @@ const card_data = [
   { image: international, text: 'Description for international shift' },
   { image: local, text: 'Description for local shifting' },
   { image: luggage, text: 'Description for luggage shift' },
+  { image: office, text: 'Description for luggage shift' },
+  { image: truck, text: 'Description for luggage shift' },
+  { image: warehouse, text: 'Description for luggage shift' },
 ];
 
 const cardStyle = {
