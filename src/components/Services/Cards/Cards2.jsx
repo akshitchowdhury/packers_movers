@@ -13,18 +13,18 @@ import truck from '../../assets/services/truck_rent.webp';
 import warehouse from '../../assets/services/warehousing_storage.webp';
 
 const card_data = [
-  { image: pet, text: 'We at Care packers and movers provide you the best assistance in choosing the right and reliable pet relocation service provider.' },
-  { image: bike, text: 'Care packers and movers have long expertise in bike transport. We are leaders with the potential to expand across India.' },
-  { image: car, text: 'Care packers and movers makes transporting your car easy. Hassle-free pickup and delivery will deliver your car to your doorstep on time.' },
-  { image: comm, text: 'Commercial moving services are a type of business that is often overlooked by those who need professional help with their office relocation.' },
-  { image: house, text: 'Whether you rent or own your home, Care packers and movers make movement hassle-free.' },
-  { image: intercity, text: 'We at Care packers and movers are committed to providing you the best-quality intercity shifting services at genuine and realistic rates.' },
-  { image: international, text: 'We are providing packing and shipping services for relocating from Bangalore to several countries the world.' },
-  { image: local, text: 'At Care packers and movers , we are committed to providing you the best quality local shifting services near you.' },
-  { image: luggage, text: 'We at Care packers and movers have made an association with the top-notch luggage transport service providers in Bengaluru.' },
-  { image: office, text: 'Assuming you are looking to relocate your office somewhere in India, at that point you can avail of our office relocation estimate services.' },
-  { image: truck, text: 'We can help you to choose the right size moving truck for your shifting requirements in Bangalore at a very affordable price.' },
-  { image: warehouse, text: 'storage unit is the place where you can keep the items safe and by the time you would be back you can get those items and could continue your living' },
+  { title: "Pet Relocation",image: pet, text: 'We at Care packers and movers provide you the best assistance in choosing the right and reliable pet relocation service provider.' },
+  { title: "Bike transportation",image: bike, text: 'Care packers and movers have long expertise in bike transport. We are leaders with the potential to expand across India.' },
+  { title: "Car transportation",image: car, text: 'Care packers and movers makes transporting your car easy. Hassle-free pickup and delivery will deliver your car to your doorstep on time.' },
+  { title: "Commercial Shifting",image: comm, text: 'Commercial moving services are a type of business that is often overlooked by those who need professional help with their office relocation.' },
+  { title: "House shifting",image: house, text: 'Whether you rent or own your home, Care packers and movers make movement hassle-free.' },
+  { title: "Intercity Shifting",image: intercity, text: 'We at Care packers and movers are committed to providing you the best-quality intercity shifting services at genuine and realistic rates.' },
+  { title: "International Shifting",image: international, text: 'We are providing packing and shipping services for relocating from Bangalore to several countries the world.' },
+  { title: "Local Shifting",image: local, text: 'At Care packers and movers , we are committed to providing you the best quality local shifting services near you.' },
+  { title: "Luggage Transport",image: luggage, text: 'We at Care packers and movers have made an association with the top-notch luggage transport service providers in Bengaluru.' },
+  { title: "Office shifting",image: office, text: 'Assuming you are looking to relocate your office somewhere in India, at that point you can avail of our office relocation estimate services.' },
+  { title: "Truck on Rent",image: truck, text: 'We can help you to choose the right size moving truck for your shifting requirements in Bangalore at a very affordable price.' },
+  { title: "Warehousing, Storage",image: warehouse, text: 'storage unit is the place where you can keep the items safe and by the time you would be back you can get those items and could continue your living' },
 ];
 
 const cardStyle = {
@@ -37,7 +37,7 @@ const cardStyle = {
   borderRadius: '8px',
   overflow: 'hidden',
   margin: '12px',
-  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', // Optional: Add a subtle box shadow
+  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.3)', // Optional: Add a subtle box shadow
   paddingBottom: '1px',
 };
 
@@ -60,7 +60,7 @@ const Cards2 = () => {
         <div key={index} style={cardStyle}>
           <img src={card.image} alt={`Card ${index + 1}`} style={imageStyle} />
           <div style={cardTextStyle}>
-            <h5 style={{ textAlign: 'center', fontSize: '1.5rem' }}>Card Title</h5>
+            <h5 style={{ textAlign: 'center', fontSize: '1.5rem' }}>{card.title}</h5>
             <p>{card.text}</p>
           </div>
         </div>
