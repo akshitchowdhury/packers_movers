@@ -1,46 +1,42 @@
 /* Navbar.css */
-
+/* Navbar.css */
 .navbar {
-  background-color: #dad5d5;
+  background-color: #f8f5f5;
   padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(243, 241, 241, 0.1); /* Add box shadow */
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-around; /* Change to space-between to separate logo and links */
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  height: 80px;
+  height: 80px; /* Increase height */
 }
+
+/* Rest of the styles... */
+
 
 .navbar-logo {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .navbar-links {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .navbar-link {
-  color: #3498db;
+  color: #3498db; /* Default color */
   text-decoration: none;
   margin-right: 20px;
-  transition: color 0.3s ease;
-}
-
-.navbar-link:last-child {
-  margin-right: 0; /* Remove right margin for the last link */
+  transition: color 0.3s ease; /* Smooth transition effect */
 }
 
 .navbar-link:hover {
-  color: goldenrod;
+  color: goldenrod; /* Color on hover */
 }
+
+/* Add media queries for responsiveness if needed */

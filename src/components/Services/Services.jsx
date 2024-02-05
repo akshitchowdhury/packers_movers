@@ -1,10 +1,17 @@
-import React from 'react'
+import React from 'react';
+import './Services.css';
+import Cards from './Cards/Cards';
 
-import Cards from './Cards/Cards'
 const Services = () => {
-  return (
-    <div><Cards/></div>
-  )
+  const renderCards = () => {
+    const cardArray = new Array(9).fill(null);
+
+    return cardArray.map((_, index) => (
+      <Cards key={index} />
+    ));
+  };
+
+  return <div className='grid-container'>{renderCards()}</div>;
 }
 
-export default Services
+export default Services;

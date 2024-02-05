@@ -1,0 +1,16 @@
+.stack{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    }
+
+    /* Services.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px; /* Adjust the gap as needed */
+  }
+  
