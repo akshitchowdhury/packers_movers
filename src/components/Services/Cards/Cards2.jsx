@@ -13,18 +13,18 @@ import truck from '../../assets/services/truck_rent.webp';
 import warehouse from '../../assets/services/warehousing_storage.webp';
 
 const card_data = [
-  { image: pet, text: 'Description for pet' },
-  { image: bike, text: 'Description for bike transport' },
-  { image: car, text: 'Description for car transport' },
-  { image: comm, text: 'Description for commercial shift' },
-  { image: house, text: 'Description for house shift' },
-  { image: intercity, text: 'Description for intercity shift' },
-  { image: international, text: 'Description for international shift' },
-  { image: local, text: 'Description for local shifting' },
-  { image: luggage, text: 'Description for luggage shift' },
-  { image: office, text: 'Description for luggage shift' },
-  { image: truck, text: 'Description for luggage shift' },
-  { image: warehouse, text: 'Description for luggage shift' },
+  { image: pet, text: 'We at Care packers and movers provide you the best assistance in choosing the right and reliable pet relocation service provider.' },
+  { image: bike, text: 'Care packers and movers have long expertise in bike transport. We are leaders with the potential to expand across India.' },
+  { image: car, text: 'Care packers and movers makes transporting your car easy. Hassle-free pickup and delivery will deliver your car to your doorstep on time.' },
+  { image: comm, text: 'Commercial moving services are a type of business that is often overlooked by those who need professional help with their office relocation.' },
+  { image: house, text: 'Whether you rent or own your home, Care packers and movers make movement hassle-free.' },
+  { image: intercity, text: 'We at Care packers and movers are committed to providing you the best-quality intercity shifting services at genuine and realistic rates.' },
+  { image: international, text: 'We are providing packing and shipping services for relocating from Bangalore to several countries the world.' },
+  { image: local, text: 'At Care packers and movers , we are committed to providing you the best quality local shifting services near you.' },
+  { image: luggage, text: 'We at Care packers and movers have made an association with the top-notch luggage transport service providers in Bengaluru.' },
+  { image: office, text: 'Assuming you are looking to relocate your office somewhere in India, at that point you can avail of our office relocation estimate services.' },
+  { image: truck, text: 'We can help you to choose the right size moving truck for your shifting requirements in Bangalore at a very affordable price.' },
+  { image: warehouse, text: 'storage unit is the place where you can keep the items safe and by the time you would be back you can get those items and could continue your living' },
 ];
 
 const cardStyle = {
