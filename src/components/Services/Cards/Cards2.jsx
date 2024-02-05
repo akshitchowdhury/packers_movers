@@ -51,6 +51,9 @@ const imageStyle = {
 const cardTextStyle = {
   padding: '1rem',
   marginBottom: '70px', // Adjust the top margin for the title
+  fontFamily: 'Roboto, sans-serif',
+  color: '#555', // Soft color
+  lineHeight: '1.5'
 };
 
 const Cards2 = () => {

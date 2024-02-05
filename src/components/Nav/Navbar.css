@@ -40,3 +40,7 @@
 }
 
 /* Add media queries for responsiveness if needed */
+
+img{
+  height: 70px;
+}
