@@ -38,10 +38,13 @@ const cardStyle = {
 const imageStyle = {
   flex: '1', // Let the image take the available space
   objectFit: 'cover', // Maintain aspect ratio and cover the space
+  width: '100%', // Set a uniform width for the image
+  height: '200px', // Set a uniform height for the image
 };
 
 const cardTextStyle = {
   padding: '1rem',
+  marginBottom: '70px', // Adjust the top margin for the title
 };
 
 const Cards2 = () => {
