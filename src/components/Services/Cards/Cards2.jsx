@@ -12,6 +12,8 @@ import office from '../../assets/services/office_shift.jpg';
 import truck from '../../assets/services/truck_rent.webp';
 import warehouse from '../../assets/services/warehousing_storage.webp';
 
+import './Cards2.css'
+
 const card_data = [
   { title: "Pet Relocation",image: pet, text: 'We at Care packers and movers provide you the best assistance in choosing the right and reliable pet relocation service provider.' },
   { title: "Bike transportation",image: bike, text: 'Care packers and movers have long expertise in bike transport. We are leaders with the potential to expand across India.' },
@@ -39,7 +41,13 @@ const cardStyle = {
   margin: '12px',
   boxShadow: '0 2px 4px rgba(0, 0, 0, 0.3)', // Optional: Add a subtle box shadow
   paddingBottom: '1px',
+  transition: 'transform 0.4s ease-in-out',
+  animation: 'fadeInUp 0.8s ease-in-out',
 };
+
+const cardHoverStyle = {
+    transform: 'scale(1.05)', // Increase the scale on hover
+  };
 
 const imageStyle = {
   flex: '1', // Let the image take the available space
@@ -57,19 +65,34 @@ const cardTextStyle = {
 };
 
 const Cards2 = () => {
-  return (
-    <>
-      {card_data.map((card, index) => (
-        <div key={index} style={cardStyle}>
-          <img src={card.image} alt={`Card ${index + 1}`} style={imageStyle} />
-          <div style={cardTextStyle}>
-            <h5 style={{ textAlign: 'center', fontSize: '1.5rem' }}>{card.title}</h5>
-            <p>{card.text}</p>
+    const [hoveredIndex, setHoveredIndex] = React.useState(null);
+  
+    const handleCardHover = (index) => {
+      setHoveredIndex(index);
+    };
+  
+    const handleCardLeave = () => {
+      setHoveredIndex(null);
+    };
+  
+    return (
+      <>
+        {card_data.map((card, index) => (
+          <div
+            key={index}
+            style={{ ...cardStyle, ...(hoveredIndex === index && cardHoverStyle) }}
+            onMouseEnter={() => handleCardHover(index)}
+            onMouseLeave={handleCardLeave}
+          >
+            <img src={card.image} alt={`Card ${index + 1}`} style={imageStyle} />
+            <div style={cardTextStyle}>
+              <h5 style={{ textAlign: 'center', fontSize: '1.5rem' }}>{card.title}</h5>
+              <p>{card.text}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </>
-  );
-};
-
-export default Cards2;
+        ))}
+      </>
+    );
+  };
+  
+  export default Cards2;
