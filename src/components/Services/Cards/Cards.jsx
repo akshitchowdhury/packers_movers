@@ -1,6 +1,6 @@
 import React from 'react';
 
-import oni from '../../assets/pet.webp';
+// import oni from '../../assets/pet.webp';
 
 const cardStyle = {
   width: '23rem',
