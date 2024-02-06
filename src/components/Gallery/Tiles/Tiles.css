@@ -1,0 +1,21 @@
+.tile{
+
+
+    height: 360px;
+    width: 250px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden}
+
+
+.tile img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    object-fit: contain; /* Adjust object-fit based on your preference */
+
+}
