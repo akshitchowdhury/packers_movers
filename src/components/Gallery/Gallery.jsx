@@ -26,6 +26,10 @@ const Gallery = () => {
     <h1>OUR GALLERY</h1>
     </div>
 
+    <br />
+    <br />
+    <br />
+
     <div className='image_gallery'>
     <Tiles images={images} />
     </div>
