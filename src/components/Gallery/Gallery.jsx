@@ -1,6 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './Gallery.css'
+import Tiles from './Tiles/Tiles'
+
 
 
 const Gallery = () => {
@@ -13,6 +15,10 @@ const Gallery = () => {
     
     <div className='title'>
     <h1>OUR GALLERY</h1>
+    </div>
+
+    <div className='image_gallery'>
+    <Tiles/>
     </div>
   
 
