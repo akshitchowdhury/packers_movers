@@ -5,6 +5,7 @@ import Navbar from '../src/components/Nav/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Services from './components/Services/Services';
+import Gallery from './components/Gallery/Gallery';
 
 
 
@@ -17,9 +18,9 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/services" element={<Services/>} />
+        <Route path="/gallery" element={<Gallery/>} />
 
-        {/* <Route path="/gallery" component={Gallery} />
-        
+        {/*         
         <Route path="/contact" component={Contact} /> */}
       </Routes>
 
