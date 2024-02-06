@@ -56,3 +56,11 @@
     color: palevioletred;
 }
   
+
+.image_gallery{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
