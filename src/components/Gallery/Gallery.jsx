@@ -19,7 +19,7 @@ const Gallery = () => {
     <>    
     <div className='background'>
     <h1>Gallery</h1>
-    <h3 className='Linker'><Link to="/gallery" className="navbar-link">Home</Link>- Gallery</h3>
+    <h3 className='Linker'><Link to="/" className="navbar-link">Home</Link>- Gallery</h3>
     </div>
     
     <div className='title'>
