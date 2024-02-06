@@ -37,12 +37,13 @@ const Gallery = () => {
     <Tiles images={images} />
     </div>
   
-
-        <div className='video'>
+    <div className='video'>
       <ReactPlayer 
-        
-        url="https://www.youtube.com/watch?v=7ZoLyoFm3pg"  />
-      </div>    
+        url="https://www.youtube.com/watch?v=7ZoLyoFm3pg"  // Replace with your video link
+        width='350px' // Adjust width as needed, e.g., '500px', '80vw'
+        height='200px' // Adjust height as needed, e.g., '300px', '50vh'
+      />
+    </div>
 
 
     

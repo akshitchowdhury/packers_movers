@@ -65,7 +65,7 @@
 
 }
 
-
+/* 
 .video {
     display: flex;
     flex-direction: column;
@@ -78,5 +78,5 @@
   .react-player {
     width: 80% !important;
     height: 0;
-    padding-bottom: 80%; /* 1:1 aspect ratio for a square shape */
-  }
+    padding-bottom: 80%; 
+  } */
