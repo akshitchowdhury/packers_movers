@@ -8,6 +8,9 @@ import i2 from '../Gallery/Tiles/i2.png';
 import i3 from '../Gallery/Tiles/i3.png';
 import i4 from '../Gallery/Tiles/i4.png';
 
+import ReactPlayer from 'react-player'
+
+
 const images = [i1, i2, i3, i4];
 
 
@@ -35,6 +38,14 @@ const Gallery = () => {
     </div>
   
 
+        <div className='video'>
+      <ReactPlayer 
+        
+        url="https://www.youtube.com/watch?v=7ZoLyoFm3pg"  />
+      </div>    
+
+
+    
 
 
     

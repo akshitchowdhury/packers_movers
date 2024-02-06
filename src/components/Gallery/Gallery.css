@@ -66,3 +66,17 @@
 }
 
 
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .react-player {
+    width: 80% !important;
+    height: 0;
+    padding-bottom: 80%; /* 1:1 aspect ratio for a square shape */
+  }
