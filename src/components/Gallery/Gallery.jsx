@@ -3,12 +3,12 @@ import {Link} from 'react-router-dom'
 import './Gallery.css'
 import Tiles from './Tiles/Tiles'
 
-import i1 from '../Tiles/i1.png';
-import i2 from '../Tiles/i2.png';
-import i3 from '../Tiles/i3.png';
-import i4 from '../Tiles/i4.png';
+import i1 from '../Gallery/Tiles/i1.png';
+import i2 from '../Gallery/Tiles/i2.png';
+import i3 from '../Gallery/Tiles/i3.png';
+import i4 from '../Gallery/Tiles/i4.png';
 
-const images = [i1, i2, i3, i4];
+const images = i1;
 
 
 
@@ -27,7 +27,7 @@ const Gallery = () => {
     </div>
 
     <div className='image_gallery'>
-    <Tiles image = {images[0]}/>
+    <Tiles images={images} />
     </div>
   
 

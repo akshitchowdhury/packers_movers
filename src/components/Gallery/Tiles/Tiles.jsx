@@ -1,18 +1,27 @@
 import React from 'react'
+import './Tiles.css'
 
-
-const Tiles = (props) => {
+const Tiles = ({images}) => {
   return (
     <>
-        <div className='tile'>
+{/* 
+      {images.map((image,index)=> 
+      (
+        <div className='tile' key={index}>
+          <img src={image} alt={`image_tile_${index + 1}`} />
+        </div>
+      
+      
+      ))} */}
         
-        <img src={props.image}  alt="image_tile"  />
-    </div>
+        <div className='tile'>
+          <img src= {images} alt="images"  />
+        </div>
     
     
     </>       
     
-  )
+  ) 
 }
 
 export default Tiles
