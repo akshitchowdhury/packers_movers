@@ -1,7 +1,7 @@
 .tile{
 
 
-    height: 360px;
+    height: 300px;
     width: 250px;
     
     display: flex;
@@ -14,8 +14,8 @@
 
 
 .tile img {
-    max-width: 100%; /* Ensure the image doesn't exceed the container width */
-    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    height: 300px;
+
     object-fit: contain; /* Adjust object-fit based on your preference */
 
 }

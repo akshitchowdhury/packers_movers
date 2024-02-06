@@ -4,7 +4,7 @@ import './Tiles.css'
 const Tiles = ({images}) => {
   return (
     <>
-{/* 
+
       {images.map((image,index)=> 
       (
         <div className='tile' key={index}>
@@ -12,11 +12,11 @@ const Tiles = ({images}) => {
         </div>
       
       
-      ))} */}
+      ))}
         
-        <div className='tile'>
+        {/* <div className='tile'>
           <img src= {images} alt="images"  />
-        </div>
+        </div> */}
     
     
     </>       

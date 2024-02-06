@@ -8,7 +8,7 @@ import i2 from '../Gallery/Tiles/i2.png';
 import i3 from '../Gallery/Tiles/i3.png';
 import i4 from '../Gallery/Tiles/i4.png';
 
-const images = i1;
+const images = [i1, i2, i3, i4];
 
 
 
