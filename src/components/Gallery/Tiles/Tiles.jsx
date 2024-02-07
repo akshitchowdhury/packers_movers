@@ -14,10 +14,7 @@ const Tiles = ({images}) => {
       
       ))}
         
-        {/* <div className='tile'>
-          <img src= {images} alt="images"  />
-        </div> */}
-    
+        
     
     </>       
     

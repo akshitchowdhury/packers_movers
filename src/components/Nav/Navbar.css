@@ -1,9 +1,10 @@
 /* Navbar.css */
 /* Navbar.css */
 .navbar {
-  background-color: #f8f5f5;
+  background-color: #ffffff;
   padding: 10px 0;
-  box-shadow: 0 2px 4px rgba(243, 241, 241, 0.1); /* Add box shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add box shadow */
+  margin-bottom: 0.5%;
 }
 
 .navbar-container {

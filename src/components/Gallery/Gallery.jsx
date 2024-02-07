@@ -7,17 +7,26 @@ import i1 from '../Gallery/Tiles/i1.png';
 import i2 from '../Gallery/Tiles/i2.png';
 import i3 from '../Gallery/Tiles/i3.png';
 import i4 from '../Gallery/Tiles/i4.png';
+import Video from './Video/Video';
 
-import ReactPlayer from 'react-player'
+
 
 
 const images = [i1, i2, i3, i4];
 
-
-
+const urls = [
+    "https://youtube.com/shorts/hx6PwCL5tqo?si=YMNM6wFCH-LudWlO",
+    "https://youtube.com/shorts/IOoqkbJ77HU?si=emj6Apq_Jk_QQJUd",
+    "https://youtu.be/zsIx6JQ-VHE?si=GVnd1dLOOvfjmED3",
+    "https://www.youtube.com/watch?v=tWn3UjOKe5Y"
+  ];
 
 
 const Gallery = () => {
+
+   
+
+
   return (
     <>    
     <div className='background'>
@@ -36,16 +45,22 @@ const Gallery = () => {
     <div className='image_gallery'>
     <Tiles images={images} />
     </div>
-  
-    <div className='video'>
-      <ReactPlayer 
-        url="https://www.youtube.com/watch?v=7ZoLyoFm3pg"  // Replace with your video link
-        width='350px' // Adjust width as needed, e.g., '500px', '80vw'
-        height='200px' // Adjust height as needed, e.g., '300px', '50vh'
-      />
+    
+    <br />
+    <br />
+    <br />
+
+    <div className='vids'>
+    {urls.map((url, index) => (
+        <Video key={index} url={url} />
+      ))}
     </div>
-
-
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     
 
 
