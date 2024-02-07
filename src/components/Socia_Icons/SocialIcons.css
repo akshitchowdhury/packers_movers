@@ -19,7 +19,7 @@
   
   .social-icons a {
     margin-bottom: 10px; /* Adjust spacing between icons */
-    color: #333; /* Default icon color */
+    color: rgb(255, 193, 37); /* Default icon color */
     text-decoration: none;
     transition: color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for color and box-shadow */
   }

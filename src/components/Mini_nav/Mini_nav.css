@@ -5,5 +5,11 @@
   width: 100%;
   margin: 0 auto;
   height: 60px; /* Increase height */
-  background-color: chocolate;
+  /* background-color: rgb(255, 193, 37); */
+  
+  background-image: url('../assets/footer.jpg');
+  background-size: auto;
+  background-position: center;
+  
+
 }

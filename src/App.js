@@ -18,6 +18,7 @@ const App = () => {
     <Router>
         <Mini_nav/>
       <Navbar />
+      
       <SocialIcons/>
       <Routes>
         <Route path="/" element={<Home/>} />
@@ -28,7 +29,7 @@ const App = () => {
         {/*         
         <Route path="/contact" component={Contact} /> */}
       </Routes>
-
+      
     </Router>
     
 );

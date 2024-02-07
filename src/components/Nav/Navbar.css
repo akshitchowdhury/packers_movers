@@ -41,9 +41,17 @@
 }
 
 
+.navbar-link {
+  /* Your existing styles for navbar links */
+  color: black; /* Default color */
+  transition: color 0.3s, transform 0.3s; /* Transition for color and scale */
+}
+
 .navbar-link:hover {
   color: goldenrod; /* Color on hover */
+  transform: scale(1.1); /* Scale effect on hover */
 }
+
 
 /* Add media queries for responsiveness if needed */
 

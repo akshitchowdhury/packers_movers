@@ -1,3 +1,10 @@
 
 
 
+.bg {
+    background-image: url('./components/assets/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain; /* or cover, depending on your preference */
+    opacity: 0.1; /* Adjust the opacity to make it look like a watermark */
+  }
+  
