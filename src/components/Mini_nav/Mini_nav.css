@@ -1,0 +1,9 @@
+.mini_nav{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 60px; /* Increase height */
+  background-color: chocolate;
+}

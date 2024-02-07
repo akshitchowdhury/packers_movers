@@ -8,12 +8,14 @@ import Services from './components/Services/Services';
 import Gallery from './components/Gallery/Gallery';
 
 import { Fade, Bounce, Slide, Zoom,LightSpeed,Rotate,Roll,Flip } from "react-swift-reveal";
+import Mini_nav from './components/Mini_nav/Mini_nav';
 
 
 
 const App = () => {
   return (
     <Router>
+        <Mini_nav/>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>} />
