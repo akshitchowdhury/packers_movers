@@ -1,0 +1,22 @@
+.social-icons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999; /* Ensure it's above other content */
+  }
+  
+  .social-icons a {
+    margin-bottom: 10px; /* Adjust spacing between icons */
+    color: #333; /* Change icon color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .social-icons a:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  

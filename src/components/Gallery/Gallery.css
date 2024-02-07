@@ -10,7 +10,9 @@
     flex-direction: row; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
      /* Set the height of the container */
-}
+
+    margin-top: 5%;
+    }
 
 
   .background h3 {
@@ -52,7 +54,8 @@
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center; /* Adjust as needed */
-    color: palevioletred;
+    color: #fccd32
+    ;
 }
   
 
