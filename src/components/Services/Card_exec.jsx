@@ -22,11 +22,8 @@ const Card_exec = () => {
   <div className='grid-container'>{renderCards()}</div>;
 
   
-  <br />
-    <br />
-    <br />
-    <br />
-    <br />
+  
+    
     </>
   )
 

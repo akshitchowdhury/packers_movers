@@ -26,6 +26,11 @@ const Services = () => {
     <h3 className='Linker'><Link to="/" className="navbar-link">Home</Link>- Services</h3>
 
     </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     
    
     <Card_exec/>

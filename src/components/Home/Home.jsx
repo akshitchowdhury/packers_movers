@@ -9,6 +9,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ReviewForm from './Review/ReviewForm/ReviewForms';
 import Card_exec from '../Services/Card_exec';
+import Gallery_exec from '../Gallery/Gallery_exec';
 
 
 
@@ -58,12 +59,11 @@ const Home = () => {
         </div>
       </Carousel>
 
-      <br />
-      <br />
-      <br />
+      
 
-      <Card_exec/>      
-
+      <Card_exec/>
+      
+      <Gallery_exec/>
       <ReviewForm />
       <br />
       <br />
