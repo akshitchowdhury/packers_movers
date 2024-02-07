@@ -8,6 +8,7 @@ import i2 from '../Gallery/Tiles/i2.png';
 import i3 from '../Gallery/Tiles/i3.png';
 import i4 from '../Gallery/Tiles/i4.png';
 import Video from './Video/Video';
+import { Fade, Bounce, Slide, Zoom,LightSpeed,Rotate,Roll,Flip } from "react-swift-reveal";
 
 
 
@@ -34,9 +35,12 @@ const Gallery = () => {
     <h3 className='Linker'><Link to="/" className="navbar-link">Home</Link>- Gallery</h3>
     </div>
     
-    <div className='title'>
+    
+<Zoom>
+<div className='title'>
     <h1>OUR GALLERY</h1>
-    </div>
+</div>
+ </Zoom>
 
     <br />
     <br />

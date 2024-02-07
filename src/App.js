@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Services from './components/Services/Services';
 import Gallery from './components/Gallery/Gallery';
 
+import { Fade, Bounce, Slide, Zoom,LightSpeed,Rotate,Roll,Flip } from "react-swift-reveal";
 
 
 

@@ -5,6 +5,7 @@ import Cards from './Cards/Cards';
 
 import { Link } from 'react-router-dom'
 import Cards2 from './Cards/Cards2';
+import { Fade, Bounce, Slide, Zoom,LightSpeed,Rotate,Roll,Flip } from "react-swift-reveal";
 
 
 const Services = () => {
@@ -32,11 +33,11 @@ const Services = () => {
     </div>
     
    
-
+<Zoom>
 <div className='title'>
     <h1>POPULAR SERVICES</h1>
 </div>
-  
+ </Zoom> 
   
   <div className='grid-container'>{renderCards()}</div>;
 
