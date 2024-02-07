@@ -13,12 +13,17 @@ const Mini_nav = () => {
   return (
         <nav className='mini_nav'>
 
-<FontAwesomeIcon icon="fa-brands fa-facebook" />
+
 
          {/* <FontAwesomeIcon icon={faInstagram} />
       <FontAwesomeIcon icon={faFacebook} /> */}
         {/* <SocialIcon url="https://twitter.com" /> */}
-    <div>Mini_nav</div>
+     <div style={{ fontWeight: 'bold', color: 'black' }}>
+      <span role="img" aria-label="phone symbol">&#x260E;</span> 
+      <span>+91 8884 242 825 | +91 9902 989 055 | +91 9482 736 693</span>
+     
+      <span> chanconstructions18@gmail.com</span>
+    </div>
     </nav>
   )
 }
