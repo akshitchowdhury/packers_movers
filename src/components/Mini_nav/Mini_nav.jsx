@@ -18,7 +18,7 @@ const Mini_nav = () => {
          {/* <FontAwesomeIcon icon={faInstagram} />
       <FontAwesomeIcon icon={faFacebook} /> */}
         {/* <SocialIcon url="https://twitter.com" /> */}
-     <div style={{ fontWeight: 'bold', color: 'black' }}>
+     <div className='mnav-info' style={{ fontWeight: 'bold', color: 'black' }}>
       <span role="img" aria-label="phone symbol">&#x260E;</span> 
       <span>+91 8884 242 825 | +91 9902 989 055 | +91 9482 736 693</span>
      

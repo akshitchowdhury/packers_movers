@@ -13,3 +13,12 @@
   
 
 }
+
+.mnav-info{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-content: center;
+  margin-left: 20%;
+
+}

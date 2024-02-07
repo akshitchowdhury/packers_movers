@@ -8,6 +8,11 @@ import frame5 from '../assets/frame5.jpg';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ReviewForm from './Review/ReviewForm/ReviewForms';
+import Card_exec from '../Services/Card_exec';
+
+
+
+
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,6 +57,12 @@ const Home = () => {
           <img src={frame5} alt="frame5" />
         </div>
       </Carousel>
+
+      <br />
+      <br />
+      <br />
+
+      <Card_exec/>      
 
       <ReviewForm />
       <br />
