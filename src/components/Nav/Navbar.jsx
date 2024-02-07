@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './Navbar.css'; // Add styles as needed
 import Footer from '../Footer/Footer';
 import Logo from '../assets/Logo.jpg';
+import { Fade, Bounce, Slide, Zoom,LightSpeed,Rotate,Roll,Flip } from "react-swift-reveal";
+
 
 const Navbar = () => {
   return (
