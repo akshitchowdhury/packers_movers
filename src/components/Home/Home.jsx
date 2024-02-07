@@ -2,7 +2,9 @@
 import React, { useEffect } from 'react';
 import './Home.css';
 import frame from '../assets/frame2.jpg';
+
 import { Fade, Bounce, Slide, Zoom,LightSpeed,Rotate,Roll,Flip } from "react-swift-reveal";
+import ReviewForm from './Review/ReviewForm/ReviewForms';
 const Home = () => {
   useEffect(() => {
     const homeContainer = document.querySelector('.home-container');
@@ -20,6 +22,12 @@ const Home = () => {
         <img src={frame} alt="frame" />
       </div>
     </Roll>
+
+    <ReviewForm/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
     </>
   );
 };

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import StarRating from './StarRating'; // Assuming you have this component
+import './ReviewForms.css'
+
 
 const ReviewForm = () => {
   const [name, setName] = useState('');
@@ -37,8 +39,9 @@ const ReviewForm = () => {
   };
   
 
-  return (
-    <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: 'auto' }}>
+  return (<>
+  
+  <div className='ReviewForm' style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: 'auto' }} >
       <form onSubmit={handleSubmit}>
         <label>
           Name:
@@ -111,6 +114,8 @@ const ReviewForm = () => {
         ))}
       </div>
     </div>
+</>
+    
   );
 };
 
