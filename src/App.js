@@ -9,6 +9,7 @@ import Gallery from './components/Gallery/Gallery';
 
 import { Fade, Bounce, Slide, Zoom,LightSpeed,Rotate,Roll,Flip } from "react-swift-reveal";
 import Mini_nav from './components/Mini_nav/Mini_nav';
+import SocialIcons from './components/Socia_Icons/SocialIcons';
 
 
 
@@ -17,6 +18,7 @@ const App = () => {
     <Router>
         <Mini_nav/>
       <Navbar />
+      <SocialIcons/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
