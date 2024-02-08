@@ -101,24 +101,24 @@ const ReviewForm = () => {
 
       <div className='ReviewForm' style={{ fontFamily: 'Arial, sans-serif', maxWidth: '400px', margin: 'auto', padding: '20px', border: '1px solid #ccc', borderRadius: '8px' }}>
         <form onSubmit={handleSubmit}>
-          <label style={{ display: 'block', marginBottom: '10px' }}>
+          <label style={{ display: 'block', marginBottom: '10px', fontFamily: 'cursive' }}>
             Name:
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              style={{ width: '100%', padding: '8px', boxSizing: 'border-box' }}
+              style={{ width: '100%', padding: '8px', boxSizing: 'border-box',  borderRadius: '20px' }}
             />
           </label>
-          <label style={{ display: 'block', marginBottom: '10px' }}>
+          <label style={{ display: 'block', marginBottom: '10px', fontFamily: 'cursive' }}>
             Review:
             <textarea
               value={review}
               onChange={(e) => setReview(e.target.value)}
-              style={{ width: '100%', padding: '8px', boxSizing: 'border-box' }}
+              style={{ width: '100%', padding: '8px', boxSizing: 'border-box', borderRadius: '20px' }}
             />
           </label>
-          <label style={{ display: 'block', marginBottom: '10px' }}>
+          <label style={{ display: 'block', marginBottom: '10px', fontFamily: 'cursive' }}>
             Rating:
             <StarRating rating={rating} onRatingChange={handleRatingChange} />
           </label>

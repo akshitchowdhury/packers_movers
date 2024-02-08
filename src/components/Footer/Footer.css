@@ -28,7 +28,6 @@
   width: 100%;
   padding: 20px 0; /* Adjust padding as needed */
   text-align: center;
-  display: none; /* Hide by default */
-  
+  /* display: none; */ /* Remove this line to make the footer visible */
 }
 

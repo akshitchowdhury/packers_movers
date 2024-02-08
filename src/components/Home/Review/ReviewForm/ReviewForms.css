@@ -5,7 +5,8 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    background-color: #f0f0f5; /* Mild purplish background color */
+    background-color: #f0de3c; /* Mild purplish background color */
+    background-image: url('../../../assets/background.jpg');
   }
   
   .ReviewForm form {
@@ -29,7 +30,7 @@
     border: 1px solid #e9ebee; /* Lighter border color */
     border-radius: 8px;
     padding: 10px;
-    background-color: #ffffff; /* White background color */
+    background-color: #b5cf76; /* White background color */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
   }
   
