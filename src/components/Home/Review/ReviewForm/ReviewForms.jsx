@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import StarRating from './StarRating'; // Assuming you have this component
 import './ReviewForms.css';
 
@@ -7,7 +7,6 @@ const ReviewForm = () => {
   const [review, setReview] = useState('');
   const [rating, setRating] = useState(0);
   const [submittedReviews, setSubmittedReviews] = useState([]);
-  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
 
   const handleRatingChange = (selectedRating) => {
     setRating(selectedRating);
@@ -30,7 +29,7 @@ const ReviewForm = () => {
     };
 
     // Update the state with the new review
-    setSubmittedReviews([...submittedReviews, newReview].slice(-5)); // Limit to latest 5 reviews
+    setSubmittedReviews([...submittedReviews, newReview].slice(-6)); // Limit to latest 5 reviews
 
     // Clear the form fields
     setName('');
@@ -38,59 +37,11 @@ const ReviewForm = () => {
     setRating(0);
   };
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentReviewIndex((prevIndex) => (prevIndex + 1) % submittedReviews.length);
-    }, 2000);
-
-    return () => clearInterval(intervalId);
-  }, [submittedReviews]);
-
   return (
     <div className='ReviewFormContainer'>
-      <div className='ReviewForm' style={{ fontFamily: 'Arial, sans-serif', maxWidth: '600px', margin: 'auto' }}>
-        <form onSubmit={handleSubmit}>
-          <label>
-            Name:
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              style={{ width: '100%', padding: '8px', margin: '8px 0', boxSizing: 'border-box' }}
-            />
-          </label>
-          <br />
-          <label>
-            Review:
-            <textarea
-              value={review}
-              onChange={(e) => setReview(e.target.value)}
-              style={{ width: '100%', padding: '8px', margin: '8px 0', boxSizing: 'border-box' }}
-            />
-          </label>
-          <br />
-          <label>
-            Rating:
-            <StarRating rating={rating} onRatingChange={handleRatingChange} />
-          </label>
-          <br />
-          <button
-            type="submit"
-            style={{
-              backgroundColor: '#0079d3',
-              color: '#ffffff',
-              padding: '10px',
-              border: 'none',
-              cursor: 'pointer',
-            }}
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-
-      {/* Display submitted reviews in a carousel */}
-      <div className="ReviewCarousel">
+      <h2 style={{ textAlign: 'center', textDecoration: 'underline', marginBottom: '20px' }}>Testimonials</h2>
+      {/* Display submitted reviews */}
+      <div className="ReviewCardsContainer">
         {submittedReviews.map((review, index) => (
           <div
             key={index}
@@ -102,8 +53,8 @@ const ReviewForm = () => {
               borderRadius: '8px',
               padding: '8px',
               margin: '0 10px',
-              display: index === currentReviewIndex ? 'inline-block' : 'none',
-              transition: 'transform 0.3s ease-in-out',
+              marginLeft: '100px',
+              display: 'inline-block', // Display cards inline
             }}
           >
             <p style={{ fontSize: '14px', fontWeight: 'bold', margin: '0', marginBottom: '5px' }}>
@@ -126,6 +77,44 @@ const ReviewForm = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className='ReviewForm' style={{ fontFamily: 'Arial, sans-serif', maxWidth: '400px', margin: 'auto', padding: '20px', border: '1px solid #ccc', borderRadius: '8px' }}>
+        <form onSubmit={handleSubmit}>
+          <label style={{ display: 'block', marginBottom: '10px' }}>
+            Name:
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              style={{ width: '100%', padding: '8px', boxSizing: 'border-box' }}
+            />
+          </label>
+          <label style={{ display: 'block', marginBottom: '10px' }}>
+            Review:
+            <textarea
+              value={review}
+              onChange={(e) => setReview(e.target.value)}
+              style={{ width: '100%', padding: '8px', boxSizing: 'border-box' }}
+            />
+          </label>
+          <label style={{ display: 'block', marginBottom: '10px' }}>
+            Rating:
+            <StarRating rating={rating} onRatingChange={handleRatingChange} />
+          </label>
+          <button
+            type="submit"
+            style={{
+              backgroundColor: '#0079d3',
+              color: '#ffffff',
+              padding: '10px',
+              border: 'none',
+              cursor: 'pointer',
+              width: '100%',
+            }}
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
