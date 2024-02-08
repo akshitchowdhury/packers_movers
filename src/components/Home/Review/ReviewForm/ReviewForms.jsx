@@ -29,7 +29,7 @@ const ReviewForm = () => {
     };
 
     // Update the state with the new review
-    setSubmittedReviews([...submittedReviews, newReview].slice(-6)); // Limit to latest 5 reviews
+    setSubmittedReviews([...submittedReviews, newReview].slice(-5)); // Limit to latest 5 reviews
 
     // Clear the form fields
     setName('');
@@ -40,44 +40,46 @@ const ReviewForm = () => {
   return (
     <div className='ReviewFormContainer'>
       <h2 style={{ textAlign: 'center', textDecoration: 'underline', marginBottom: '20px' }}>Testimonials</h2>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>What Our Clients say</h2>
       {/* Display submitted reviews */}
-      <div className="ReviewCardsContainer">
+      <div className="ReviewCardsContainer" style={{ textAlign: 'center' }}>
         {submittedReviews.map((review, index) => (
           <div
             key={index}
             className="ReviewCard"
             style={{
-              width: '100px',
-              height: '100px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+              width: '200px',
+              height: '150px',
               borderRadius: '8px',
               padding: '8px',
-              margin: '0 10px',
-              marginLeft: '100px',
-              display: 'inline-block', // Display cards inline
+              marginRight: '20px', // Add margin right for spacing between cards
+              display: 'inline-block',
+              position: 'relative', // Add relative positioning
+              transition: 'transform 0.3s, box-shadow 0.3s', // Add transition effect
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'scale(1.05)'; // Scale up on hover
+              e.target.style.boxShadow = '0 8px 16px rgba(218, 165, 32, 0.2)'; // Add shadow on hover
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = 'scale(1)'; // Reset scale on mouse leave
+              e.target.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)'; // Reset shadow on mouse leave
             }}
           >
-            <p style={{ fontSize: '14px', fontWeight: 'bold', margin: '0', marginBottom: '5px' }}>
+            <p style={{ fontSize: '14px', fontWeight: 'bold', margin: '0', marginBottom: '5px', textAlign: 'center' }}>
               {review.name}
             </p>
-            <p style={{ marginBottom: '5px' }}>{review.review}</p>
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              {[...Array(5)].map((_, i) => (
-                <span
-                  key={i}
-                  style={{
-                    color: i < review.rating ? '#ffc107' : '#e4e5e9',
-                    marginRight: '2px',
-                    fontSize: '14px',
-                  }}
-                >
-                  ★
-                </span>
-              ))}
+            <p style={{ marginBottom: '5px', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px' }}>{review.review}</p>
+            <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
+              <StarRating rating={review.rating} onRatingChange={() => {}} />
             </div>
           </div>
         ))}
       </div>
+      <br/>
+      <br/>
+      <br/>
+
       <div className='ReviewForm' style={{ fontFamily: 'Arial, sans-serif', maxWidth: '400px', margin: 'auto', padding: '20px', border: '1px solid #ccc', borderRadius: '8px' }}>
         <form onSubmit={handleSubmit}>
           <label style={{ display: 'block', marginBottom: '10px' }}>
