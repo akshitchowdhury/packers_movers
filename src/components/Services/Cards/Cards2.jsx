@@ -46,7 +46,9 @@ const cardStyle = {
 };
 
 const cardHoverStyle = {
-    transform: 'scale(1.05)', // Increase the scale on hover
+  transform: 'scale(1.05)', // Increase the scale on hover
+  backgroundColor: 'gold', // Set goldenrod background color on hover
+  transition: 'transform 0.4s ease-in-out, background-color 0.3s ease-in-out', // Smooth transition for both transform and background color
   };
 
 const imageStyle = {
