@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import StarRating from './StarRating'; // Assuming you have this component
 import './ReviewForms.css';
 
@@ -7,6 +7,19 @@ const ReviewForm = () => {
   const [review, setReview] = useState('');
   const [rating, setRating] = useState(0);
   const [submittedReviews, setSubmittedReviews] = useState([]);
+
+  useEffect(() => {
+    // Retrieve submitted reviews from localStorage on component mount
+    const savedReviews = JSON.parse(localStorage.getItem('submittedReviews'));
+    if (savedReviews) {
+      setSubmittedReviews(savedReviews);
+    }
+  }, []);
+
+  useEffect(() => {
+    // Save submitted reviews to localStorage whenever it changes
+    localStorage.setItem('submittedReviews', JSON.stringify(submittedReviews));
+  }, [submittedReviews]);
 
   const handleRatingChange = (selectedRating) => {
     setRating(selectedRating);
@@ -60,10 +73,12 @@ const ReviewForm = () => {
             onMouseEnter={(e) => {
               e.target.style.transform = 'scale(1.05)'; // Scale up on hover
               e.target.style.boxShadow = '0 8px 16px rgba(218, 165, 32, 0.2)'; // Add shadow on hover
+              e.target.style.backgroundColor = 'goldenrod'; // Change background color on hover
             }}
             onMouseLeave={(e) => {
               e.target.style.transform = 'scale(1)'; // Reset scale on mouse leave
               e.target.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)'; // Reset shadow on mouse leave
+              e.target.style.backgroundColor = ''; // Reset background color on mouse leave
             }}
           >
             <p style={{ fontSize: '14px', fontWeight: 'bold', margin: '0', marginBottom: '5px', textAlign: 'center' }}>
@@ -71,7 +86,7 @@ const ReviewForm = () => {
             </p>
             <p style={{ marginBottom: '5px', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px' }}>{review.review}</p>
             <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
-              <StarRating rating={review.rating} onRatingChange={() => {}} />
+              <StarRating rating={review.rating} onRatingChange={() => {}} starColor="black" /> {/* Pass starColor prop */}
             </div>
           </div>
         ))}
