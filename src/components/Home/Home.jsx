@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </Carousel>
 
-      <img src="" alt="boundary"  />
+      
 
       <Card_exec/>
       

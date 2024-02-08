@@ -12,7 +12,7 @@ const ReviewForm = () => {
     // Retrieve submitted reviews from localStorage on component mount
     const savedReviews = JSON.parse(localStorage.getItem('submittedReviews'));
     if (savedReviews) {
-      setSubmittedReviews(savedReviews);
+      setSubmittedReviews(savedReviews.slice(-5)); // Display the latest 5 reviews
     }
   }, []);
 
@@ -67,24 +67,25 @@ const ReviewForm = () => {
               padding: '8px',
               marginRight: '20px', // Add margin right for spacing between cards
               display: 'inline-block',
+              boxShadow :'0 8px 16px rgba(218, 165, 32, 0.2)',
               position: 'relative', // Add relative positioning
-              transition: 'transform 0.3s, box-shadow 0.3s', // Add transition effect
+              transition: 'transform 0.3s, box-shadow 0.3s, background-color 0.3s', // Add transition effect
             }}
             onMouseEnter={(e) => {
               e.target.style.transform = 'scale(1.05)'; // Scale up on hover
-              e.target.style.boxShadow = '0 8px 16px rgba(218, 165, 32, 0.2)'; // Add shadow on hover
-              e.target.style.backgroundColor = 'goldenrod'; // Change background color on hover
+              // e.target.style.boxShadow = '0 8px 16px rgba(218, 165, 32, 0.2)'; // Add shadow on hover
+              // e.target.style.backgroundColor = 'purple'; // Change background color on hover
             }}
             onMouseLeave={(e) => {
               e.target.style.transform = 'scale(1)'; // Reset scale on mouse leave
-              e.target.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)'; // Reset shadow on mouse leave
+              // e.target.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)'; // Reset shadow on mouse leave
               e.target.style.backgroundColor = ''; // Reset background color on mouse leave
             }}
           >
             <p style={{ fontSize: '14px', fontWeight: 'bold', margin: '0', marginBottom: '5px', textAlign: 'center' }}>
               {review.name}
             </p>
-            <p style={{ marginBottom: '5px', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px' }}>{review.review}</p>
+            <p style={{ marginBottom: '5px', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', fontStyle:'italic' }}>---- "{review.review}"</p>
             <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
               <StarRating rating={review.rating} onRatingChange={() => {}} starColor="black" /> {/* Pass starColor prop */}
             </div>
