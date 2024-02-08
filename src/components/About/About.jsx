@@ -25,7 +25,7 @@ const About = () => {
     <br/>
     <Bounce>
       <div className='title'>
-        <h1>CARE PACKERS AND MOVERS</h1>
+        <h1>ALWYN PACKERS</h1>
       </div>
     </Bounce>
     <br/>
