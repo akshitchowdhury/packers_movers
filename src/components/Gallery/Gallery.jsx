@@ -23,6 +23,11 @@ const Gallery = () => {
     <br/>
     <br/>
     <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     
     <Gallery_exec/>
     <br/>

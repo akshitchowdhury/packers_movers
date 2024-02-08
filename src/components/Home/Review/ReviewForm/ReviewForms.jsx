@@ -52,8 +52,10 @@ const ReviewForm = () => {
 
   return (
     <div className='ReviewFormContainer'>
-      <h2 style={{ textAlign: 'center', textDecoration: 'underline', marginBottom: '20px' }}>Testimonials</h2>
-      <h2 style={{ textAlign: 'center', marginBottom: '20px', color: 'goldenrod' }}>What Our Clients say</h2>
+      <h2 style={{ textAlign: 'center', textDecoration: 'underline', marginBottom: '20px', fontFamily: 'cursive', /* Use Roboto font style */
+  fontSize: '25px', /* Adjust font size as needed */
+  color: 'olive' }}>Testimonials</h2>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px', color: 'goldenrod', fontFamily: 'cursive' }}>What Our Clients say</h2>
       {/* Display submitted reviews */}
       <div className="ReviewCardsContainer" style={{ textAlign: 'center' }}>
         {submittedReviews.map((review, index) => (

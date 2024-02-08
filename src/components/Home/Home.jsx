@@ -59,9 +59,6 @@ const Home = () => {
           <img src={frame5} alt="frame5" />
         </div>
       </Carousel>
-
-      
-
       <Card_exec/>
       
       <Gallery_exec/>
