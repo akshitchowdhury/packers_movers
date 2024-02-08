@@ -82,7 +82,7 @@ const ReviewForm = () => {
               e.target.style.backgroundColor = ''; // Reset background color on mouse leave
             }}
           >
-            <p style={{ fontSize: '14px', fontWeight: 'bold', margin: '0', marginBottom: '5px', textAlign: 'center' }}>
+            <p style={{ fontSize: '18px', fontWeight: 'bold', margin: '0', marginBottom: '5px', textAlign: 'center' }}>
               {review.name}
             </p>
             <p style={{ marginBottom: '5px', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', fontStyle:'italic' }}>---- "{review.review}"</p>
