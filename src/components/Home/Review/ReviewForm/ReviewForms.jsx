@@ -58,42 +58,39 @@ const ReviewForm = () => {
       <h2 style={{ textAlign: 'center', marginBottom: '20px', color: 'goldenrod', fontFamily: 'cursive' }}>What Our Clients say</h2>
       {/* Display submitted reviews */}
       <div className="ReviewCardsContainer" style={{ textAlign: 'center' }}>
-        {submittedReviews.map((review, index) => (
-          <div
-            key={index}
-            className="ReviewCard"
-            style={{
-              width: '200px',
-              height: '150px',
-              borderRadius: '8px',
-              padding: '8px',
-              marginRight: '20px', // Add margin right for spacing between cards
-              display: 'inline-grid',
-              boxShadow :'0 8px 16px rgba(218, 165, 32, 0.2)',
-              position: 'relative', // Add relative positioning
-              transition: 'transform 0.3s, box-shadow 0.3s, background-color 0.3s', // Add transition effect
-              
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.transform = 'scale(1.05)'; // Scale up on hover
-              // e.target.style.boxShadow = '0 8px 16px rgba(218, 165, 32, 0.2)'; // Add shadow on hover
-              // e.target.style.backgroundColor = 'purple'; // Change background color on hover
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.transform = 'scale(1)'; // Reset scale on mouse leave
-              // e.target.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)'; // Reset shadow on mouse leave
-              e.target.style.backgroundColor = ''; // Reset background color on mouse leave
-            }}
-          >
-            <p style={{ fontSize: '18px', fontWeight: 'bold', margin: '0', marginBottom: '5px', textAlign: 'center' }}>
-              {review.name}
-            </p>
-            <p style={{ marginBottom: '40%', textAlign: 'left', paddingLeft: '10px', fontStyle:'italic' }}>---- "{review.review}"</p>
-            <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
-              <StarRating rating={review.rating} onRatingChange={() => {}} starColor="black" /> {/* Pass starColor prop */}
+        {submittedReviews
+          .filter(review => review.rating >= 4) // Filter reviews with 4 or 5 stars
+          .map((review, index) => (
+            <div
+              key={index}
+              className="ReviewCard"
+              style={{
+                width: '200px',
+                height: '150px',
+                borderRadius: '8px',
+                padding: '8px',
+                marginRight: '20px', // Add margin right for spacing between cards
+                display: 'inline-grid',
+                boxShadow :'0 8px 16px rgba(218, 165, 32, 0.2)',
+                position: 'relative', // Add relative positioning
+                transition: 'transform 0.3s, box-shadow 0.3s, background-color 0.3s', // Add transition effect
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.transform = 'scale(1.05)'; // Scale up on hover
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.transform = 'scale(1)'; // Reset scale on mouse leave
+              }}
+            >
+              <p style={{ fontSize: '18px', fontWeight: 'bold', margin: '0', marginBottom: '5px', textAlign: 'center' }}>
+                {review.name}
+              </p>
+              <p style={{ marginBottom: '40%', textAlign: 'left', paddingLeft: '10px', fontStyle:'italic' }}>---- "{review.review}"</p>
+              <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
+                <StarRating rating={review.rating} onRatingChange={() => {}} starColor="black" /> {/* Pass starColor prop */}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
       <br/>
       <br/>
