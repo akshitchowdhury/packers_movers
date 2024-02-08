@@ -30,7 +30,7 @@ const Gallery_exec = () => {
 </div>
  </Zoom>
 
-    <br />
+    
     <br />
     <br />
 

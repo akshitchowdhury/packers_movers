@@ -25,7 +25,10 @@ const Gallery = () => {
     <br/>
     
     <Gallery_exec/>
-    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
 
     
