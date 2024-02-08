@@ -42,3 +42,9 @@
     font-size: 20px; /* Larger font size for stars */
   }
   
+
+  .ReviewCard{
+    background-image: url('../../../assets/footer.jpg');
+    background-position: center;
+    background-size: cover;
+  }

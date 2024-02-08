@@ -10,7 +10,7 @@ const StarRating = ({ rating, onRatingChange }) => {
         <FaStar
           key={index}
           onClick={() => onRatingChange(index + 1)}
-          color={index < rating ? '#ffc107' : '#e4e5e9'}
+          color={index < rating ? 'black' : '#e4e5e9'}
           style={{ cursor: 'pointer' }}
         />
       ))}

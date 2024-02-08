@@ -53,7 +53,7 @@ const ReviewForm = () => {
   return (
     <div className='ReviewFormContainer'>
       <h2 style={{ textAlign: 'center', textDecoration: 'underline', marginBottom: '20px' }}>Testimonials</h2>
-      <h2 style={{ textAlign: 'center', marginBottom: '20px' }}>What Our Clients say</h2>
+      <h2 style={{ textAlign: 'center', marginBottom: '20px', color: 'goldenrod' }}>What Our Clients say</h2>
       {/* Display submitted reviews */}
       <div className="ReviewCardsContainer" style={{ textAlign: 'center' }}>
         {submittedReviews.map((review, index) => (
@@ -70,6 +70,7 @@ const ReviewForm = () => {
               boxShadow :'0 8px 16px rgba(218, 165, 32, 0.2)',
               position: 'relative', // Add relative positioning
               transition: 'transform 0.3s, box-shadow 0.3s, background-color 0.3s', // Add transition effect
+              
             }}
             onMouseEnter={(e) => {
               e.target.style.transform = 'scale(1.05)'; // Scale up on hover
