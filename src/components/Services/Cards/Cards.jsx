@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import oni from '../../assets/pet.webp';
+
 
 const cardStyle = {
   width: '23rem',
@@ -29,7 +29,7 @@ const cardTextStyle = {
 const Cards = () => {
   return (
     <div style={cardStyle}>
-      <img src={oni} alt="Card" style={imageStyle} />
+      {/* <img src={oni} alt="Card" style={imageStyle} /> */}
       <div style={cardTextStyle}>
       <h5 style={{ textAlign: 'center', fontSize: '1.5rem' }}>Card Title</h5>
 
