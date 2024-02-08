@@ -66,7 +66,7 @@ const ReviewForm = () => {
               borderRadius: '8px',
               padding: '8px',
               marginRight: '20px', // Add margin right for spacing between cards
-              display: 'inline-block',
+              display: 'inline-grid',
               boxShadow :'0 8px 16px rgba(218, 165, 32, 0.2)',
               position: 'relative', // Add relative positioning
               transition: 'transform 0.3s, box-shadow 0.3s, background-color 0.3s', // Add transition effect
@@ -86,7 +86,7 @@ const ReviewForm = () => {
             <p style={{ fontSize: '18px', fontWeight: 'bold', margin: '0', marginBottom: '5px', textAlign: 'center' }}>
               {review.name}
             </p>
-            <p style={{ marginBottom: '5px', textAlign: 'left', paddingLeft: '10px', paddingRight: '10px', fontStyle:'italic' }}>---- "{review.review}"</p>
+            <p style={{ marginBottom: '40%', textAlign: 'left', paddingLeft: '10px', fontStyle:'italic' }}>---- "{review.review}"</p>
             <div style={{ position: 'absolute', bottom: '10px', left: '10px' }}>
               <StarRating rating={review.rating} onRatingChange={() => {}} starColor="black" /> {/* Pass starColor prop */}
             </div>
