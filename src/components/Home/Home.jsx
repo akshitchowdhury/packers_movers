@@ -12,7 +12,7 @@ import Card_exec from '../Services/Card_exec';
 import Gallery_exec from '../Gallery/Gallery_exec';
 import GoogleReviewsButton from './GoogleReviewsButton';
 
-
+import boundary from '../assets/boundary.jpg'
 
 
 
@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </Carousel>
 
-      
+      <img src="" alt="boundary"  />
 
       <Card_exec/>
       

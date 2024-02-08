@@ -31,8 +31,7 @@ const Gallery_exec = () => {
  </Zoom>
 
     
-    <br />
-    <br />
+    
 
     <div className='image_gallery'>
     <Tiles images={images} />

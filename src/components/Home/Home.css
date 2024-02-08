@@ -7,7 +7,7 @@
   margin-top: 1%;
   width: 100%; /* Set width to 100% to span the entire screen */
   max-width: 100%;
-  margin-bottom: 5%;
+  
   border-radius: 10px;
   position: relative; /* Add this to make the background positioning relative */
   overflow: hidden; /* Hide overflowing content */
@@ -18,7 +18,7 @@
   width: 100%; /* Use 100% width to fit the carousel width */
   height: 300px; /* Set height to your desired value */
   border-radius: 10px;
-  margin-top: 0%;
+  
 }
 
 
