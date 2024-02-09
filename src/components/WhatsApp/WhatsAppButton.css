@@ -2,3 +2,13 @@
     transform: scale(1.1) rotate(360deg); /* Adjust the rotation angle as needed */
   }
   
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px; /* Adjust the distance from the bottom as needed */
+        right: -20px; /* Adjust the distance from the right as needed */
+        z-index: 999; /* Ensure it's above other content */
+        
+    
+    }
+      
+  

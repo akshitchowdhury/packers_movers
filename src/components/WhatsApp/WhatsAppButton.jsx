@@ -1,9 +1,9 @@
 import React from 'react';
 import { generateLink } from '@reslear/whatsapp-link';
-import WhatsAppIcon from './WhatsAppIcon';
 
-import icon from './whatsapp-logo-background-29.png';
-import './WhatsappButton.css'
+
+import icon from '../assets/whatsapp-logo-background-29.png';
+import './WhatsAppButton.css'
 
 const WhatsAppButton = ({ phoneNumber, message }) => {
   const handleClick = () => {

@@ -33,9 +33,9 @@ const App = () => {
         {/*         
         <Route path="/contact" component={Contact} /> */}
 
-        <WhatsApp/>
       </Routes>
-      
+        
+      <WhatsApp/>
     </Router>
 </>    
 );

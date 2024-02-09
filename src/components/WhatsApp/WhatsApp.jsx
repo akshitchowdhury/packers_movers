@@ -1,11 +1,14 @@
 import React from 'react'
+import WhatsAppButton from './WhatsAppButton'
+
+
+
 
 const WhatsApp = () => {
   return (
     <div>
-    <h1>Welcome to My Website</h1>
-    <p>Feel free to chat with us on WhatsApp!</p>
-    <WhatsAppButton phoneNumber="3452453643" message="text *text* https://site.com/name" />
+ 
+    <WhatsAppButton phoneNumber="9353239880" message="Connect With us" />
   </div>
   )
 }

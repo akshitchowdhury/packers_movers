@@ -67,7 +67,7 @@ const Home = () => {
       <Card_exec/>
       
       <Gallery_exec/>
-      <ReviewForm /> 
+      
       {/* <GoogleReviewsButton/> */}
       <br />
       <br />
