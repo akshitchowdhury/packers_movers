@@ -12,6 +12,7 @@ import Mini_nav from './components/Mini_nav/Mini_nav';
 import SocialIcons from './components/Socia_Icons/SocialIcons';
 import bg from './components/assets/background.jpg'
 import Contact from './components/Contact/Conatct';
+import WhatsApp from './components/WhatsApp/WhatsApp';
 
 
 const App = () => {
@@ -31,6 +32,8 @@ const App = () => {
 
         {/*         
         <Route path="/contact" component={Contact} /> */}
+
+        <WhatsApp/>
       </Routes>
       
     </Router>

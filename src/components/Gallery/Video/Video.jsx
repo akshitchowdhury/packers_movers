@@ -8,8 +8,9 @@ const Video = ({ url }) => {
         url={url}
         width='250px'
         height='200px'
-        playing={true} // Start playing the video automatically
-        loop={true} // Set loop to true to play the video continuously
+        playing={true} // Set playing to true to start playing the video automatically
+        loop= {true}
+
       />
     </div>
   );
