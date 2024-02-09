@@ -23,7 +23,7 @@ const Home = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % 5); // 5 is the number of images
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % 6); // 5 is the number of images
     }, 2000); // Auto swipe every 2 seconds
 
     return () => clearInterval(interval);
@@ -46,7 +46,7 @@ const Home = () => {
       >
       
         <div>
-          <img src={frame1} alt="frame1" />
+          <img src={frame6} alt="frame6" />
         </div>
         <div>
           <img src={frame2} alt="frame2" />
@@ -58,7 +58,10 @@ const Home = () => {
           <img src={frame4} alt="frame4" />
         </div>
         <div>
-          <img src={frame6} alt="frame5" />
+          <img src={frame5} alt="frame6" />
+        </div>
+        <div>
+          <img src={frame1} alt="frame1" />
         </div>
       </Carousel>
       <Card_exec/>
