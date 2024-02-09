@@ -2,6 +2,9 @@ import React from 'react'
 import './Contact.css'
 import { Link } from 'react-router-dom'
 import { Bounce } from "react-swift-reveal";
+import MapLeaflet from './Map/MapLeaflet';
+import InquiryAndMapComponent from './InquiryForm/InquiryForm';
+
 
 const Conatct = () => {
   return (
@@ -21,8 +24,12 @@ const Conatct = () => {
 <br />
 
     <div className='title'>
-        <h1>ALWYN PACKERS</h1>
+        <h1>CONTACT US</h1>
       </div>
+    <br />  
+    <br />  
+    <br />  
+    <InquiryAndMapComponent/>
     </div>
   )
 }

@@ -17,7 +17,7 @@
 .footer {
   background-image: url('../assets/footer.jpg');
   background-size: auto;
-  background-position: center;
+  background-position: relative;
   background-color: #333; /* Example background color */
   color: rgb(24, 23, 23); /* Example text color */
   position: fixed;
