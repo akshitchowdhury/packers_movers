@@ -1,12 +1,33 @@
-import React from 'react';
-import './Footer.css';
+import React, { useState, useEffect } from 'react';
 
-const Footer = () => {
+import './Footer.css'
+function ScrollDetectFooter() {
+  const [showFooter, setShowFooter] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.offsetHeight;
+      const scrollPosition = window.scrollY;
+
+      if (windowHeight + scrollPosition >= documentHeight) {
+        setShowFooter(true);
+      } else {
+        setShowFooter(false);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="footer">
-      Copyright © 2024 Care Packers And Movers. All rights reserved | Designed by Egalitarian Tech Connectivity Pvt. Ltd
-    </div>
+    <footer className={`footer ${showFooter ? 'visible' : ''}`}>
+      {/* Your footer content */}
+    </footer>
   );
 }
 
-export default Footer;
+export default ScrollDetectFooter;

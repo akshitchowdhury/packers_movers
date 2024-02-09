@@ -1,33 +1,21 @@
-/* Footer.css */
-
-/* .footer {
-  background-image: url('../assets/footer.jpg');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 0;
-  margin-top: 200%;
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-} */
-
-
 .footer {
   background-image: url('../assets/footer.jpg');
   background-size: auto;
   background-position: relative;
   background-color: #333; /* Example background color */
-  color: rgb(24, 23, 23); /* Example text color */
+  color: #181717; /* Example text color */
   position: fixed;
-  height: 4%;
+  height: 20%;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   padding: 20px 0; /* Adjust padding as needed */
   text-align: center;
-  /* display: none; */ /* Remove this line to make the footer visible */
+  transform: translateY(100%);
+  transition: transform 0.5s ease-out;
 }
 
+.footer.visible {
+  transform: translateY(0);
+}
