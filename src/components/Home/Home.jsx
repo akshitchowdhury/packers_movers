@@ -5,6 +5,8 @@ import frame2 from '../assets/frame2.jpg';
 import frame3 from '../assets/frame3.jpg';
 import frame4 from '../assets/frame4.jpg';
 import frame5 from '../assets/frame5.jpg';
+import frame6 from '../assets/frame6.jpg';
+
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import ReviewForm from './Review/ReviewForm/ReviewForms';
@@ -56,7 +58,7 @@ const Home = () => {
           <img src={frame4} alt="frame4" />
         </div>
         <div>
-          <img src={frame5} alt="frame5" />
+          <img src={frame6} alt="frame5" />
         </div>
       </Carousel>
       <Card_exec/>

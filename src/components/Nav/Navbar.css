@@ -2,6 +2,7 @@
 /* Navbar.css */
 .navbar {
   background-color: #ffffff;
+  background-image: url("../assets/navbg2.avif");
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Add box shadow */
   margin-bottom: 0.5%;
@@ -48,7 +49,7 @@
 }
 
 .navbar-link:hover {
-  color: goldenrod; /* Color on hover */
+  color: rgb(158, 156, 18); /* Color on hover */
   transform: scale(1.1); /* Scale effect on hover */
 }
 
