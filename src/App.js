@@ -11,6 +11,7 @@ import { Fade, Bounce, Slide, Zoom,LightSpeed,Rotate,Roll,Flip } from "react-swi
 import Mini_nav from './components/Mini_nav/Mini_nav';
 import SocialIcons from './components/Socia_Icons/SocialIcons';
 import bg from './components/assets/background.jpg'
+import Contact from './components/Contact/Conatct';
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/about" element={<About/>} />
         <Route path="/services" element={<Services/>} />
         <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/contact" element={<Contact/>} />
 
         {/*         
         <Route path="/contact" component={Contact} /> */}
