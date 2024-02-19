@@ -33,7 +33,7 @@ const Gallery_exec = () => {
     
     
 
-    <div className='image_gallery'>
+    <div className='image_gallery flex flex-wrap justify-center'>
     <Tiles images={images} />
     </div>
     
@@ -41,7 +41,7 @@ const Gallery_exec = () => {
     <br />
     <br />
 
-    <div className='vids'>
+    <div className='vids flex flex-wrap justify-center'>
     {urls.map((url, index) => (
         <Video key={index} url={url} />
       ))}

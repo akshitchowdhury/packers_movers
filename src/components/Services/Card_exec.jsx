@@ -19,7 +19,7 @@ const Card_exec = () => {
 </div>
  </Zoom> 
   
-  <div className='grid-container'>{renderCards()}</div>;
+  <div className='flex flex-wrap justify-center'>{renderCards()}</div>;
 
   
   

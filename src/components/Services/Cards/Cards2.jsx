@@ -29,42 +29,42 @@ const card_data = [
   { title: "Warehousing, Storage",image: warehouse, text: 'storage unit is the place where you can keep the items safe and by the time you would be back you can get those items and could continue your living' },
 ];
 
-const cardStyle = {
-  width: '23rem',
-  height: '400px', // Adjust the overall card height as needed
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  border: '1px solid #ccc',
-  borderRadius: '8px',
-  overflow: 'hidden',
-  margin: '12px',
-  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.3)', // Optional: Add a subtle box shadow
-  paddingBottom: '1px',
-  transition: 'transform 0.4s ease-in-out',
-  animation: 'fadeInUp 0.8s ease-in-out',
-};
+// const cardStyle = {
+//   width: '23rem',
+//   height: '400px', // Adjust the overall card height as needed
+//   display: 'flex',
+//   flexDirection: 'column',
+//   justifyContent: 'center',
+//   border: '1px solid #ccc',
+//   borderRadius: '8px',
+//   overflow: 'hidden',
+//   margin: '12px',
+//   boxShadow: '0 2px 4px rgba(0, 0, 0, 0.3)', // Optional: Add a subtle box shadow
+//   paddingBottom: '1px',
+//   transition: 'transform 0.4s ease-in-out',
+//   animation: 'fadeInUp 0.8s ease-in-out',
+// };
 
-const cardHoverStyle = {
-  transform: 'scale(1.05)', // Increase the scale on hover
-  backgroundColor: 'gold', // Set goldenrod background color on hover
-  transition: 'transform 0.4s ease-in-out, background-color 0.3s ease-in-out', // Smooth transition for both transform and background color
-  };
+// const cardHoverStyle = {
+//   transform: 'scale(1.05)', // Increase the scale on hover
+//   backgroundColor: 'gold', // Set goldenrod background color on hover
+//   transition: 'transform 0.4s ease-in-out, background-color 0.3s ease-in-out', // Smooth transition for both transform and background color
+//   };
 
-const imageStyle = {
-  flex: '1', // Let the image take the available space
-  objectFit: 'cover', // Maintain aspect ratio and cover the space
-  width: '100%', // Set a uniform width for the image
-  height: '200px', // Set a uniform height for the image
-};
+// const imageStyle = {
+//   flex: '1', // Let the image take the available space
+//   objectFit: 'cover', // Maintain aspect ratio and cover the space
+//   width: '100%', // Set a uniform width for the image
+//   height: '200px', // Set a uniform height for the image
+// };
 
-const cardTextStyle = {
-  padding: '1rem',
-  marginBottom: '70px', // Adjust the top margin for the title
-  fontFamily: 'Roboto, sans-serif',
-  color: '#555', // Soft color
-  lineHeight: '1.5'
-};
+// const cardTextStyle = {
+//   padding: '1rem',
+//   marginBottom: '70px', // Adjust the top margin for the title
+//   fontFamily: 'Roboto, sans-serif',
+//   color: '#555', // Soft color
+//   lineHeight: '1.5'
+// };
 
 const Cards2 = () => {
     const [hoveredIndex, setHoveredIndex] = React.useState(null);
@@ -82,16 +82,22 @@ const Cards2 = () => {
         {card_data.map((card, index) => (
           <div
             key={index}
-            style={{ ...cardStyle, ...(hoveredIndex === index && cardHoverStyle) }}
+            className="max-w-sm rounded overflow-hidden shadow-2xl m-4 card-container"
             onMouseEnter={() => handleCardHover(index)}
             onMouseLeave={handleCardLeave}
           >
-            <img src={card.image} alt={`Card ${index + 1}`} style={imageStyle} />
-            <div style={cardTextStyle}>
-              <h5 style={{ textAlign: 'center', fontSize: '1.5rem' }}>{card.title}</h5>
-              <p>{card.text}</p>
+            <img src={card.image} alt={`Card ${index + 1}`} className='w-full h-64 object-cover' />
+            <div className="px-6 py-4">
+              <h5 className="font-bold text-xl mb-2">{card.title}</h5>
+              <p className="inline-block  rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{card.text}</p>
             </div>
           </div>
+          
+          
+
+
+
+
         ))}
       </>
     );

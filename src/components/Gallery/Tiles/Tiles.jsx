@@ -1,5 +1,5 @@
 import React from 'react'
-import './Tiles.css'
+// import './Tiles.css'
 
 const Tiles = ({images}) => {
   return (
@@ -7,8 +7,10 @@ const Tiles = ({images}) => {
 
       {images.map((image,index)=> 
       (
-        <div className='tile' key={index}>
-          <img src={image} alt={`image_tile_${index + 1}`} />
+        <div className='tile flex flex-wrap justify-center' key={index}>
+        <div className='max-w-sm rounded overflow-hidden shadow-2xl m-4 card-container'>
+          <img className="w-full h-64 object-cover" src={image} alt={`image_tile_${index + 1}`} />
+        </div>
         </div>
       
       
