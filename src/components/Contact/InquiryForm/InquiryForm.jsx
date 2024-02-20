@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, Form, Input, Button } from 'antd'; // Assuming you're using Ant Design components
 import MapLeaflet from '../Map/MapLeaflet'; // Import your MapLeaflet component
-
+import './InquiryForm.css'
 const InquiryForm = () => {
   const onFinish = (values) => {
     console.log('Received values:', values);
@@ -17,16 +17,19 @@ const InquiryForm = () => {
       onFinish={onFinish}
       onFinishFailed={onFinishFailed}
       layout="vertical"
+      className="form-title"
     >
       <Form.Item
+        
         label="Name"
         name="name"
         rules={[{ required: true, message: 'Please input your name!' }]}
       >
-        <Input />
+        <Input className='enter-name' />
       </Form.Item>
 
       <Form.Item
+      
         label="Email Address"
         name="email"
         rules={[
@@ -34,15 +37,16 @@ const InquiryForm = () => {
           { type: 'email', message: 'Please enter a valid email address!' },
         ]}
       >
-        <Input />
+        <Input className='enter-email' />
       </Form.Item>
 
       <Form.Item
+      
         label="Message"
         name="message"
         rules={[{ required: true, message: 'Please input your message!' }]}
       >
-        <Input.TextArea />
+        <Input.TextArea className='enter-message' />
       </Form.Item>
 
       <Form.Item
@@ -53,12 +57,12 @@ const InquiryForm = () => {
           { pattern: /^\d{10}$/, message: 'Please enter a valid phone number!' },
         ]}
       >
-        <Input />
+        <Input className='enter-phone'/>
       </Form.Item>
 
       <Form.Item>
         <Button type="primary" htmlType="submit">
-          Submit
+          <h2 className='text-center text-black text-l mb-6'>Submit</h2>
         </Button>
       </Form.Item>
     </Form>
@@ -66,14 +70,16 @@ const InquiryForm = () => {
 };
 
 const InquiryAndMapComponent = () => {
+  
   return (
     <div style={{ display: 'flex' }}>
-      <Card style={{ flex: 1, marginRight: '1rem', maxHeight: '500px' }}> {/* Adjust the max-height as per your requirement */}
-        <h2>Inquiry Form</h2>
+      <Card style={{ flex: 1, marginRight: '1rem', maxHeight: '500px', boxShadow: '0 4px 6px rgba(255, 0, 0, 0.6)' }}> {/* Adjust the max-height as per your requirement */}
+        <h2 className='text-center text-black text-xl mb-6'>Inquiry Form</h2>
         <InquiryForm />
       </Card>
-      <Card style={{ flex: 1, maxHeight: '500px' }}> {/* Adjust the max-height as per your requirement */}
-        <h2>Map</h2>
+      <Card style={{ flex: 1, marginRight: '1rem', maxHeight: '500px', boxShadow: '0 4px 6px rgba(0, 255, 0, 0.6)'}}>
+       {/* Adjust the max-height as per your requirement */}
+        <h2 className='text-center text-black text-xl mb-6'>Map</h2>
         <MapLeaflet />
       </Card>
     </div>

@@ -47,6 +47,7 @@ import footLogo from '../assets/logo.png';
 import { FaInstagram, FaFacebook, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import map_short from '../assets/map_short.png'
+import MapLeaflet from '../Contact/Map/MapLeaflet';
 
 const Footer = () => {
  
@@ -89,6 +90,7 @@ const Footer = () => {
           <div className="text-black">
             <h4 className="text-3xl font-bold mb-4 mt-4">About Us</h4>
             <img src={footLogo} className='footerLogo' alt="footerLogo" />
+            
             <p className='text-2xl mb-4 tracking-wide leading-relaxed'>Alwyn Packers: Your Trusted Partner in Smooth Moves! With years of expertise and a commitment to excellence, we make relocation a breeze.</p>
           </div>
 
@@ -116,13 +118,24 @@ const Footer = () => {
             <br />
             
             <ul>
-            <li className='text-2xl mb-4 tracking-wide leading-relaxed'><Link to="/" className="navbar-link ">Home</Link></li>
-            <li className='text-2xl mb-4 tracking-wide leading-relaxed'><Link to="/" onClick={() => handleClick(aboutUsRef)} className="navbar-link">About Us</Link>
+            <div className="link-tab navbar-links flex flex-col md:flex-col md:items-start md:justify-end w-full md:w-auto md:justify-center">
+            <li className='text-2xl mb-4 tracking-wide leading-relaxed'>
+            <Link to="/" className="ml-6 text-lg font-medium text-black transition duration-300 hover:text-white hover:text-lg hover:transform hover:scale-110">Home</Link>
+              </li>
+
+            <li className='text-2xl mb-4 tracking-wide leading-relaxed'><Link to="/about" className="ml-6 text-lg font-medium text-black transition duration-300 hover:text-white hover:text-lg hover:transform hover:scale-110">About Us</Link>
             </li>
-            <li className='text-2xl mb-4 tracking-wide leading-relaxed'><Link to="/" onClick={() => handleClick(servicesRef)} className="navbar-link">Services</Link></li> 
-            <li className='text-2xl mb-4 tracking-wide leading-relaxed'><Link to="/" onClick={() => handleClick(galleryRef)} className="navbar-link">Gallery</Link></li>
-            <li className='text-2xl mb-4 tracking-wide leading-relaxed'><Link to="/" onClick={() => handleClick(contactRef)} className="navbar-link">Contact Us</Link>
-            </li></ul>
+            <li className='text-2xl mb-4 tracking-wide leading-relaxed'>
+            <Link to="/gallery" className="ml-6 text-lg font-medium text-black transition duration-300 hover:text-white hover:text-lg hover:transform hover:scale-110">Gallery</Link>
+            </li>
+            <li className='text-2xl mb-4 tracking-wide leading-relaxed'>
+            <Link to="/services" className="ml-6 text-lg font-medium text-black transition duration-300 hover:text-white hover:text-lg hover:transform hover:scale-110">Services</Link>
+            </li>
+            <li className='text-2xl mb-4 tracking-wide leading-relaxed'>
+            <Link to="/contact" className="ml-6 text-lg font-medium text-black transition duration-300 hover:text-white hover:text-lg hover:transform hover:scale-110">Contact Us</Link>
+            </li>
+        </div>
+            </ul>
                  
           </div>
           
@@ -133,27 +146,15 @@ const Footer = () => {
             <h4 className="text-3xl font-bold mb-4 mt-4">Follow Us</h4>
             <br />
             <div className='flex space-x-4'>
-            <img className='map_short ' src={map_short} alt="map_short" />
-            
-            <div className="flex space-x-4">
-            
-            
-              <div className='social-icons' style={styles.container}>
-                <a href="https://www.instagram.com/" style={styles.link}><FaInstagram style={styles.icon('#405DE6', '#405DE6')} /></a>
-                <a href="https://www.facebook.com/" style={styles.link}><FaFacebook style={styles.icon('#1877F2', '#1877F2')} /></a>
-                <a href="mailto:kkindustrieblr@gmail.com" style={styles.link}><FaEnvelope style={styles.icon('#EA4335', '#EA4335')} /></a>
-                <a href="tel:+919845371516" style={styles.link}><FaPhone style={styles.icon('#34A853', '#34A853')} /></a>
-              </div>
-              </div>
-            </div>
+            {/* <img className='map_short ' src={map_short} alt="map_short" /> */}
+            <MapLeaflet/>
+           </div>
           </div>
 
         </div>
 
         {/* Powered by Innomatrics Technologies */}
-        <br/>
-        <br/>
-        <br/>
+        
         <h3 className="text-center text-black text-xl mb-6">Powered by Innomatrics Technologies</h3>
         
       </div>
