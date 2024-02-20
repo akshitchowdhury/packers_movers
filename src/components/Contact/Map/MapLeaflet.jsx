@@ -11,7 +11,6 @@ const MapLeaflet = () => {
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
-    
   });
   const blueIcon = new L.Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
@@ -31,6 +30,14 @@ const MapLeaflet = () => {
     );
   }, []); // Empty dependency array ensures this effect runs only once on component mount
 
+  const handleMarkerClick = () => {
+    const [lat, lng] = fixedLocation;
+    const description = "Description of the fixed location";
+
+    // Open Google Maps URL in a new tab
+    window.open(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}&query_place_id=${description}`);
+  };
+
   return (
     <MapContainer
       center={fixedLocation} // Set the center to the fixed location
@@ -41,12 +48,12 @@ const MapLeaflet = () => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={fixedLocation} icon={redIcon}>
+      <Marker position={fixedLocation} icon={redIcon} eventHandlers={{ click: handleMarkerClick }}>
         <Popup>Fixed Location</Popup>
       </Marker>
       {userLocation && (
         <Marker position={userLocation} icon={blueIcon}>
-          <Popup>You are Here</Popup>
+          <Popup>User Location</Popup>
         </Marker>
       )}
     </MapContainer>
