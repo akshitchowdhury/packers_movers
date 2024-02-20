@@ -15,6 +15,7 @@ import Gallery_exec from '../Gallery/Gallery_exec';
 import GoogleReviewsButton from './GoogleReviewsButton';
 
 import boundary from '../assets/boundary.jpg'
+import Footer from '../Footer/Footer';
 
 
 
@@ -69,16 +70,8 @@ const Home = () => {
       <Gallery_exec/>
       
       {/* <GoogleReviewsButton/> */}
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
+      
+      {/* <Footer/> */}
     </>
   );
 };

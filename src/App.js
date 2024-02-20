@@ -13,6 +13,7 @@ import SocialIcons from './components/Socia_Icons/SocialIcons';
 import bg from './components/assets/background.jpg'
 import Contact from './components/Contact/Conatct';
 import WhatsApp from './components/WhatsApp/WhatsApp';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
       </Routes>
         
       <WhatsApp/>
+      <Footer/>
     </Router>
 </>    
 );

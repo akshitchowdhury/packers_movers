@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from '../Footer/Footer';
+
 import Logo from '../assets/Logo.jpg';
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link to="/contact" className="ml-6 text-lg font-medium text-black transition duration-300 hover:text-white hover:text-lg hover:transform hover:scale-110">Contact Us</Link>
         </div>
       </div>
-      <Footer />
+      
     </nav>
   );
 }
