@@ -9,10 +9,12 @@ const url = "https://www.youtube.com/watch?v=QgC-E41w084&pp=ygUScGFja2VycyBhbmQg
 const About = () => {
   return (
     <>    
-      <div className='background'>
-        <h1>About Us</h1>
-        <h3 className='Linker'><Link to="/" className="navbar-link">Home</Link>- About Us</h3>
-      </div>
+      <div className="bg-gray-200 p-4 md:p-8">
+      <h1 className="text-2xl md:text-4xl font-bold text-center mb-4 md:mb-8">About Us</h1>
+      <h3 className="text-lg md:text-xl font-semibold text-center mb-4 md:mb-8">
+        <Link to="/" className="navbar-link">Home</Link> - Services
+      </h3>
+    </div>
       <br />
       <br />
       <div className="container mx-auto px-4">

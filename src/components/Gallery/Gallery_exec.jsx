@@ -47,16 +47,6 @@ const Gallery_exec = () => {
       ))}
     </div>
     
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     </>
   )
 }
