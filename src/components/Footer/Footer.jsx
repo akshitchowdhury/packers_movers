@@ -26,7 +26,7 @@
 //   }, []);
 
 //   return (
-//     <footer className={`footer bg-gray-900 text-white p-4 ${showFooter ? 'visible' : ''}`}>
+//     <footer className={`footer bg-gray-900 text-black p-4 ${showFooter ? 'visible' : ''}`}>
 //       <div className="container mx-auto">
 //         {/* Your footer content */}
 //         <p className="text-center">© 2024 Your Company. All rights reserved.</p>
@@ -78,7 +78,7 @@ const Footer = () => {
   };
   
   return (
-    <footer className="foot relative bg-black py-27 ">
+    <footer className="foot relative bg-gray-200 py-27 ">
       {/* Background image */}
       <div className="absolute inset-0 bg-cover bg-center z-0" style={{backgroundImage: "url('../../assets/f3.webp')"}}></div>
 
@@ -86,14 +86,14 @@ const Footer = () => {
       <div className="container mx-auto relative z-10" style={{ marginTop: "-55px" }}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1 */}
-          <div className="text-white">
+          <div className="text-black">
             <h4 className="text-3xl font-bold mb-4 mt-4">About Us</h4>
             <img src={footLogo} className='footerLogo' alt="footerLogo" />
-            <p className='text-2xl mb-4 tracking-wide leading-relaxed'>Alwyn Packers: Your Trusted Partner in Smooth Moves! With years of expertise and a commitment to excellence, we make relocation a breeze. Let us handle the heavy lifting while you focus on starting your new chapter!</p>
+            <p className='text-2xl mb-4 tracking-wide leading-relaxed'>Alwyn Packers: Your Trusted Partner in Smooth Moves! With years of expertise and a commitment to excellence, we make relocation a breeze.</p>
           </div>
 
           {/* Column 2 */}
-          <div className="text-white">
+          <div className="text-black">
             <h4 className="text-3xl font-bold mb-4 mt-4">Contact Us</h4>
             <br />
             <p className="text-2xl mb-4 tracking-wide leading-relaxed">Kk industries 
@@ -105,13 +105,13 @@ const Footer = () => {
               560062
             </p>
             <br/>
-            <p className='text-2xl mb-4 tracking-wide leading-relaxed'>Email: kkindustrieblr@gmail.com</p>
+            <p className='text-2xl mb-4 tracking-wide leading-relaxed'>Email: alwynpackers@gmail.com</p>
             <p className='text-2xl mb-4 tracking-wide leading-relaxed'>Phone: +91 98453-71516</p>
           </div>
 
           {/* Column 3 */}
             
-          <div className="text-white">
+          <div className="text-black">
             <h4 className="text-3xl font-bold mb-4 mt-4">Quick Links</h4>
             <br />
             
@@ -129,7 +129,7 @@ const Footer = () => {
 
           {/* Column 4 */}
 
-          <div className="text-white">
+          <div className="text-black">
             <h4 className="text-3xl font-bold mb-4 mt-4">Follow Us</h4>
             <br />
             <div className='flex space-x-4'>
@@ -154,7 +154,7 @@ const Footer = () => {
         <br/>
         <br/>
         <br/>
-        <h3 className="text-center text-white text-xl mb-6">Powered by Innomatrics Technologies</h3>
+        <h3 className="text-center text-black text-xl mb-6">Powered by Innomatrics Technologies</h3>
         
       </div>
     </footer>
